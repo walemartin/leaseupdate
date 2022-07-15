@@ -12,7 +12,7 @@ from email.message import EmailMessage
 
 
 # Give the location of the file
-path = "C:\\Users\\OLAWALE MARTINS\\Documents\\leasebook.xlsx"
+path = "leasebook.xlsx"
  
 # workbook object is created
 wb_obj = openpyxl.load_workbook(path)
@@ -26,7 +26,7 @@ min_row = wb_obj.active.min_row
 max_row = wb_obj.active.max_row
 
 print(min_column,max_column,min_row,max_row)
-
+sheet_obj.auto_filter.ref="A1:H1"
 
 for rowNum in range(2,sheet_obj.max_row+1):
     n='=DATEDIF(D{},E{},"D")'.format(rowNum,rowNum)
