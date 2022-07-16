@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="excelmodule.py" />
     <Compile Include="leaseupdate.py" />
     <Compile Include="pandaexcel.py" />
   </ItemGroup>
